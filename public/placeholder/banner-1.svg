@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 174" width="550" height="174">
+<rect width="550" height="174" fill="#f7f9fa"/><rect x=".5" y=".5" width="549" height="173" fill="none" stroke="#dde3e6"/>
+<circle cx="70" cy="87" r="34" fill="#1192a2" opacity=".15"/><circle cx="70" cy="87" r="18" fill="#1192a2" opacity=".5"/>
+<text x="124" y="96" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="30" font-weight="700" fill="#333">국세청</text>
+<text x="124" y="128" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="15" fill="#888">바로가기 →</text>
+</svg>

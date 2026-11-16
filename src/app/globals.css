@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+/*
+ * 디자인 토큰 — 레퍼런스(woorimodoo.or.kr THEMECRAFT 테마) 실측값.
+ * 주조색은 이 한 곳에서만 바꾸면 공개 사이트·관리자 화면 모두 반영된다. (src/config/site.ts themeColor 와 같은 값)
+ */
+@theme {
+  --color-theme: #1192a2;
+  --color-theme-light: #e7f4f6; /* 푸터: 주조색 위에 흰색 90% */
+  --color-ink: #000;
+  --color-title: #333;
+  --color-body: #666;
+  --color-desc: #777;
+  --color-muted: #999;
+  --color-line: #ddd;
+  --color-line-soft: #e2e2e2;
+  --color-pager: #bbbcc3;
+  --color-surface: #f8f8f8;
+  --color-hover: #f6f6f6;
+  --color-chip: #f3f3f3;
+  --color-notice: #990000;
+  --color-new: #ff6600;
+  --color-hot: #e52955;
+
+  --font-sans: "Noto Sans KR", "Noto Sans Korean", "Malgun Gothic", dotum, sans-serif;
+  --font-num: verdana, sans-serif;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  font-family: var(--font-sans);
+  min-width: 280px;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+.ico {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.125em;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+/* 관리자 편집기 본문 미리보기 (공개 사이트 #bo_v_con 과 비슷하게) */
+.admin-prose {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #222;
+}
+.admin-prose p {
+  min-height: 1.7em;
+}
+.admin-prose h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 1em 0 0.5em;
+}
+.admin-prose h3 {
+  font-size: 17px;
+  font-weight: 700;
+  margin: 1em 0 0.5em;
+}
+.admin-prose ul {
+  list-style: disc;
+  padding-left: 1.5em;
+}
+.admin-prose ol {
+  list-style: decimal;
+  padding-left: 1.5em;
+}
+.admin-prose blockquote {
+  border-left: 4px solid var(--color-line);
+  padding-left: 1em;
+  color: var(--color-body);
+}
+.admin-prose a {
+  color: var(--color-theme);
+  text-decoration: underline;
+}
+.admin-prose img {
+  max-width: 100%;
+  height: auto;
+  margin: 0.5em 0;
+}
+.admin-prose img.ProseMirror-selectednode {
+  outline: 3px solid var(--color-theme);
+}
+
+::selection {
+  background: var(--color-theme);
+  color: #fff;
+}
